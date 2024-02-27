@@ -1,0 +1,53 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ 
+html,body{
+height:100%;
+width:100%;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.page1{
+    background: url("/public/images/background.png");
+    background-size: cover;
+}
+.page2{
+    background: url("/public/images/background.png");
+    background-size: cover;
+}
+.page3{
+    background: url("/public/images/background.png");
+    background-size: cover;
+}
+.page4{
+    background: url("/public/images/background.png");
+    background-size: cover;
+}
+.page5{
+    background: url("/public/images/background.png");
+    background-size: cover;
+}
+
+.event span{
+    text-align: center;
+}
+
+@media (max-width:600px) {
+
+    .events-container{
+        /* gap: 40px; */
+    }
+    .event{
+        width: 100vw;
+        height: 70vh;
+        margin-top: 20px;
+    }
+}
