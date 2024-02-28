@@ -1,0 +1,13 @@
+:-root{
+    --bgColor:#0B001A;
+}
+body{
+    background: var(--bgColor) !important;
+}
+.navbar{
+    padding: 1rem !important;
+    background-color: transparent !important;
+}
+.navbar-brand{
+    font-size: 3rem !important;
+}
