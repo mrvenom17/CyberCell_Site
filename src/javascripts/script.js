@@ -29,7 +29,7 @@ function events(){
         const past_events=data.past_events;
         past_events.forEach(event => {
             past_event+=`
-            <div class="swiper-slide event h-[550px] w-fit flex flex-col items-center justify-evenly p-8">
+            <div class="swiper-slide event past-event h-[550px] w-fit flex flex-col items-center justify-evenly p-8">
                     <div class="image h-[250px] w-[400px] bg-white border-4 border-zinc-800 overflow-hidden max-[700px]:w-[300px]">
                         <img src=${event.image} alt="" id="event-image" class="h-full w-full">
                     </div>

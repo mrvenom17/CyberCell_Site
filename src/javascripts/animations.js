@@ -119,13 +119,13 @@ var swiper = new Swiper(".mySwiper", {
 
 
 function eventanimation() {
-  var events = document.querySelectorAll('.event');
+  var events = document.querySelectorAll('.past-event');
 
   events.forEach(event => {
     gsap.from(event, {
       y:"100%",
       opacity:0,
-      duration:2,
+      duration:1,
       scrollTrigger: {
         trigger: '.page4',
         toggleActions:"restart none reverse none",
@@ -139,4 +139,16 @@ function eventanimation() {
 }
 
 window.onload = eventanimation;
+
+gsap.to(".horizontal h1",{
+  transform:"translateX(-80%)",
+  scrollTrigger:{
+    trigger:".horizontal",
+    scroller:".main",
+    scrub:2,
+    start:"top 0",
+    end:"top -100%",
+    pin:true,
+  }
+})
 

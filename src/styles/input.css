@@ -9,6 +9,11 @@ html,body{
 height:100%;
 width:100%;
 }
+
+@font-face {
+    font-family: Helveticaa;
+    src: url("/public/fonts/HelveticaNeueMedium.otf");
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -77,6 +82,11 @@ width:100%;
 
 .event span{
     text-align: center;
+}
+.horizontal h1{
+    font-family: Helveticaa;
+    font-weight: 800;
+    letter-spacing: 5px;
 }
 
 @media (max-width:600px) {
