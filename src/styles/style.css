@@ -1,13 +1,92 @@
-:-root{
-    --bgColor:#0B001A;
+:root {
+  --bgColor: #06010c;
+  --pink: #ed3a85;
 }
-body{
-    background: var(--bgColor) !important;
+body {
+  background: var(--bgColor) !important;
 }
-.navbar{
-    padding: 1rem !important;
-    background-color: transparent !important;
+
+nav.navbar.navbar-expand-lg.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: transparent !important;
 }
-.navbar-brand{
-    font-size: 3rem !important;
+.navbar {
+  padding: 1rem !important;
+  background: #0b001a !important;
+}
+.navbar-brand {
+  font-size: 2.5rem !important;
+}
+.nav-link {
+  color: white !important;
+  font-size: 1.9rem;
+  font-weight: 500 !important;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.btn-primary {
+  background: transparent !important;
+  padding: 0.4rem 0.7rem;
+  width: 15%;
+  height: 2.5rem;
+  color: var(--pink) !important;
+  border: 2px solid var(--pink) !important;
+  border-radius: 2rem !important;
+}
+
+.navbar-expand-lg .navbar-nav {
+  flex-direction: row;
+  width: 50% !important;
+  justify-content: center;
+  margin: auto !important;
+}
+
+/* hero-section */
+.hero-section {
+  height: calc(100vh-10rem);
+  width: 100%;
+}
+
+.hero-section .left-part {
+  width: 45%;
+  height: calc(100vh-10rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+  padding: 0 0 0 5%;
+}
+
+
+.hero-section .left-part h1 {
+  font-weight: 400;
+  font-size: 9vh;
+  line-height: 13vh;
+  word-spacing: 2px;
+}
+.hero-section .left-part p{
+  font-size: 1.3rem !important;
+}
+.btn-cell{
+  width: 100% !important;
+
+}
+.btn-cell button{
+  width: 40%;
+  padding: 1% 2.5%;
+  margin: 5% 2.5%;
+  outline:0;
+  border: 0;
+  background: linear-gradient(to left, #ff408f, #c33aed);
+  color:white;
+  font-size: 1.25rem;
+}
+.pink-text {
+  color: var(--pink) !important;
 }
