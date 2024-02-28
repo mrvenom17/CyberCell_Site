@@ -1,0 +1,91 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ 
+html,body{
+height:100%;
+width:100%;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper {
+    width: 100%;
+    height: 80%;
+  }
+
+.page1{
+    background: url("/public/images/background.png");
+    background-size: cover;
+ /* Hero Section */
+.hero-section {
+    background-color: #000;
+    color: #fff;
+    padding: 100px 0;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero Content */
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /
+}
+
+/* Text Content */
+.text-content {
+    max-width: 50%;
+}
+
+/* Image Content */
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+}
+.page2{
+    background: url("/public/images/background.png");
+    background-size: cover;
+}
+.page3{
+    background: url("/public/images/background.png");
+    background-size: cover;
+}
+.page4{
+    background: url("/public/images/background.png");
+    background-size: cover;
+}
+.page5{
+    background: url("/public/images/background.png");
+    background-size: cover;
+}
+
+.event span{
+    text-align: center;
+}
+
+@media (max-width:600px) {
+
+    .events-container{
+        /* gap: 40px; */
+    }
+    .event{
+        width: 100vw;
+        height: 70vh;
+        margin-top: 20px;
+    }
+}
