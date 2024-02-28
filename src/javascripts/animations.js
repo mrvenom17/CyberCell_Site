@@ -122,7 +122,6 @@ function eventanimation() {
   var events = document.querySelectorAll('.event');
 
   events.forEach(event => {
-    console.log(event);
     gsap.from(event, {
       y:"100%",
       opacity:0,
