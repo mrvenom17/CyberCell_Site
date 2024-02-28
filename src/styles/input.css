@@ -18,6 +18,41 @@ width:100%;
 .page1{
     background: url("/public/images/background.png");
     background-size: cover;
+ /* Hero Section */
+.hero-section {
+    background-color: #000;
+    color: #fff;
+    padding: 100px 0;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero Content */
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /
+}
+
+/* Text Content */
+.text-content {
+    max-width: 50%;
+}
+
+/* Image Content */
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
 }
 .page2{
     background: url("/public/images/background.png");
