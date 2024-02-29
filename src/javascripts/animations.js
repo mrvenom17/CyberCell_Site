@@ -128,7 +128,7 @@ function eventanimation() {
       duration:1,
       scrollTrigger: {
         trigger: '.page4',
-        toggleActions:"restart none reverse none",
+        toggleActions:"restart none restart none",
         scroller: '.main',
         start: 'top 40%',
         end: '10% 50%',
