@@ -1,0 +1,43 @@
+.hero-section {
+  height: calc(100vh-10rem);
+  width: 100%;
+}
+
+.hero-section .left-part {
+  width: 45%;
+  height: calc(100vh-10rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+  padding: 0 0 0 5%;
+}
+
+
+.hero-section .left-part h1 {
+  font-weight: 400;
+  font-size: 9vh;
+  line-height: 13vh;
+  word-spacing: 2px;
+}
+.hero-section .left-part p{
+  font-size: 1.3rem !important;
+}
+.btn-cell{
+  width: 100% !important;
+
+}
+.btn-cell button{
+  width: 40%;
+  padding: 1% 2.5%;
+  margin: 5% 2.5%;
+  outline:0;
+  border: 0;
+  background: linear-gradient(to left, #ff408f, #c33aed);
+  color:white;
+  font-size: 1.25rem;
+}
+.pink-text {
+  color: var(--pink) !important;
+}
