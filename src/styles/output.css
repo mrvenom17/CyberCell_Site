@@ -16,6 +16,12 @@ html,body{
   src: url("/public/fonts/HelveticaNeueMedium.otf");
 }
 
+@font-face {
+  font-family: Lastica;
+
+  src: url("/public/fonts/FontsFree-Net-Lastica.ttf");
+}
+
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
@@ -616,6 +622,10 @@ video {
   display:flex;
 }
 
+.h-16{
+  height:4rem;
+}
+
 .h-24{
   height:6rem;
 }
@@ -641,8 +651,16 @@ video {
   min-height:100vh;
 }
 
+.w-1\/2{
+  width:50%;
+}
+
 .w-24{
   width:6rem;
+}
+
+.w-\[50\%\]{
+  width:50%;
 }
 
 .w-full{
@@ -655,8 +673,24 @@ video {
   transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.cursor-pointer{
+  cursor:pointer;
+}
+
+.resize-none{
+  resize:none;
+}
+
+.flex-col{
+  flex-direction:column;
+}
+
 .flex-wrap{
   flex-wrap:wrap;
+}
+
+.items-start{
+  align-items:flex-start;
 }
 
 .items-center{
@@ -671,8 +705,24 @@ video {
   justify-content:space-between;
 }
 
+.justify-around{
+  justify-content:space-around;
+}
+
 .justify-evenly{
   justify-content:space-evenly;
+}
+
+.gap-2{
+  gap:0.5rem;
+}
+
+.gap-4{
+  gap:1rem;
+}
+
+.gap-8{
+  gap:2rem;
 }
 
 .overflow-hidden{
@@ -683,6 +733,15 @@ video {
   border-radius:9999px;
 }
 
+.border-2{
+  border-width:2px;
+}
+
+.border-white{
+  --tw-border-opacity:1;
+  border-color:rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .bg-black{
   --tw-bg-opacity:1;
   background-color:rgb(0 0 0 / var(--tw-bg-opacity));
@@ -691,6 +750,10 @@ video {
 .bg-purple-400{
   --tw-bg-opacity:1;
   background-color:rgb(192 132 252 / var(--tw-bg-opacity));
+}
+
+.bg-transparent{
+  background-color:transparent;
 }
 
 .bg-gradient-to-r{
@@ -715,6 +778,14 @@ video {
   background-repeat:no-repeat;
 }
 
+.p-10{
+  padding:2.5rem;
+}
+
+.p-4{
+  padding:1rem;
+}
+
 .p-6{
   padding:1.5rem;
 }
@@ -728,9 +799,29 @@ video {
   padding-right:2.5rem;
 }
 
+.px-4{
+  padding-left:1rem;
+  padding-right:1rem;
+}
+
+.py-2{
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+}
+
 .py-6{
   padding-top:1.5rem;
   padding-bottom:1.5rem;
+}
+
+.text-2xl{
+  font-size:1.5rem;
+  line-height:2rem;
+}
+
+.text-3xl{
+  font-size:1.875rem;
+  line-height:2.25rem;
 }
 
 .text-4xl{
@@ -756,12 +847,22 @@ video {
   line-height:1.75rem;
 }
 
+.text-xl{
+  font-size:1.25rem;
+  line-height:1.75rem;
+}
+
 .font-bold{
   font-weight:700;
 }
 
 .capitalize{
   text-transform:capitalize;
+}
+
+.text-\[\#ED3A85\]{
+  --tw-text-opacity:1;
+  color:rgb(237 58 133 / var(--tw-text-opacity));
 }
 
 .text-purple-500{
@@ -776,6 +877,10 @@ video {
 
 .opacity-0{
   opacity:0;
+}
+
+.duration-200{
+  transition-duration:200ms;
 }
 
 .swiper {
@@ -848,6 +953,14 @@ video {
   letter-spacing: 5px;
 }
 
+.page5{
+  font-family: Anta,sans-serif;
+}
+
+.handshake{
+  filter: brightness(0) invert(1);
+}
+
 @media (max-width:600px) {
   .event{
     width: 100vw;
@@ -856,13 +969,94 @@ video {
   }
 }
 
+@media (max-width:900px) {
+  .page5{
+    flex-direction: column-reverse;
+  }
+
+  .page5 .left{
+    height: 70vh;
+    width: 100%;
+    align-items:center;
+    justify-content: center;
+  }
+
+  .page5 .left .connect{
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .page5 .right{
+    height: 60vh;
+    width: 100%;
+  }
+
+  .page5 .right form input{
+    width: 100%;
+  }
+}
+
+.hover\:bg-white:hover{
+  --tw-bg-opacity:1;
+  background-color:rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:text-black:hover{
+  --tw-text-opacity:1;
+  color:rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 @media (max-width: 900px){
+  .max-\[900px\]\:h-12{
+    height:3rem;
+  }
+
   .max-\[900px\]\:h-fit{
     height:-moz-fit-content;
     height:fit-content;
   }
 
+  .max-\[900px\]\:w-12{
+    width:3rem;
+  }
+
+  .max-\[900px\]\:w-\[100\%\]{
+    width:100%;
+  }
+
+  .max-\[900px\]\:items-center{
+    align-items:center;
+  }
+
+  .max-\[900px\]\:gap-4{
+    gap:1rem;
+  }
+
+  .max-\[900px\]\:p-4{
+    padding:1rem;
+  }
+
+  .max-\[900px\]\:text-2xl{
+    font-size:1.5rem;
+    line-height:2rem;
+  }
+
   .max-\[900px\]\:text-\[60vw\]{
     font-size:60vw;
+  }
+
+  .max-\[900px\]\:text-\[10vw\]{
+    font-size:10vw;
+  }
+
+  .max-\[900px\]\:text-\[100vw\]{
+    font-size:100vw;
+  }
+}
+
+@media (max-width: 600px){
+  .max-\[600px\]\:justify-center{
+    justify-content:center;
   }
 }

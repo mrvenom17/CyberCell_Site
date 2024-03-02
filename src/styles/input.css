@@ -9,10 +9,14 @@ html,body{
 height:100%;
 width:100%;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
 @font-face {
     font-family: Helveticaa;
     src: url("/public/fonts/HelveticaNeueMedium.otf");
+}
+@font-face {
+    font-family: Lastica;
+    src: url("/public/fonts/FontsFree-Net-Lastica.ttf");
 }
 @tailwind base;
 @tailwind components;
@@ -88,6 +92,12 @@ width:100%;
     font-weight: 800;
     letter-spacing: 5px;
 }
+.page5{
+    font-family: Anta,sans-serif;
+}
+.handshake{
+    filter: brightness(0) invert(1);
+}
 
 @media (max-width:600px) {
 
@@ -95,5 +105,28 @@ width:100%;
         width: 100vw;
         height: 70vh;
         margin-top: 20px;
+    }
+}
+@media (max-width:900px) {
+ .page5{
+    flex-direction: column-reverse;
+ }
+    .page5 .left{
+        height: 70vh;
+        width: 100%;
+        align-items:center;
+        justify-content: center;
+    }
+    .page5 .left .connect{
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .page5 .right{
+        height: 60vh;
+        width: 100%;
+    }
+    .page5 .right form input{
+        width: 100%;
     }
 }
