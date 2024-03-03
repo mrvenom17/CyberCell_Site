@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+
+.social-buttons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.social-buttons a img {
+    width: 100%;
+    height: 100%;
+}
+
+.team-member h2,
+.team-member p {
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.team-member {
+    background-image: url('/public/images/BG2.png');
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(107, 4, 95, 0.5);
+    padding: 20px;
+    width: calc(25% - 40px);
+    height: 350px;
+    cursor: pointer;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    text-align: center;
+    margin: 0px;
+}
+
+.team-member:nth-child(odd) {
+    animation: slideFromLeft 1s forwards;
+}
+
+.team-member:nth-child(even) {
+    animation: slideFromRight 1s forwards;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.team-member h2 {
+    margin-top: 0;
+}
+
+.team-member p {
+    margin-bottom: 0;
+}
+
+.team-member-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hello-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideFromTop 1.5s forwards;
+}
+
+@keyframes slideFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(107, 4, 95, 0.8);
+    width: calc(27.5% - 40px);
+    height: 450px;
+}
+
+.team-member:hover + .team-member {
+    width: calc(22.5% - 40px);
+    height: 350px;
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(107, 4, 95, 0.5);
+}
+
+.team-member:not(:hover) {
+    width: calc(22.5% - 40px);
+    height: 350px;
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(107, 4, 95, 0.5);
+}
+
+.main-title {
+    text-align: center; /* Center the text */
+    font-size: 2em; /* Make the text large */
+    margin-bottom: 20px; /* Add some space below the text */
+    overflow: hidden; /* Hide overflow to prevent initial visibility of words */
+}
+
+.main-title span {
+    display: inline-block; /* Make each word an inline-block element */
+    opacity: 0; /* Initially hide each word */
+    animation: fadeIn 0.5s forwards; /* Animation to fade in each word */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Delay each word's animation */
+.main-title span:nth-child(1) {
+    animation-delay: 0s;
+}
+.main-title span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.main-title span:nth-child(3) {
+    animation-delay: 1s;
+}
