@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-
-
+/* General styles for all devices */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('./BG/BG.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
 
 .social-buttons a {
     display: inline-block;
@@ -28,16 +35,19 @@
 }
 
 .team-member {
-    background-image: url('/public/images/BG2.png');
+    background-image: url('./LINES/BG2.png');
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(107, 4, 95, 0.5);
     padding: 20px;
-    width: calc(25% - 40px);
-    height: 350px;
+    width: auto;
     cursor: pointer;
     transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
     text-align: center;
     margin: 0px;
+    /* Remove these three lines to display the full bio on mobile devices */
+    text-overflow: unset;
+    white-space: normal;
+    height: auto;
 }
 
 .team-member:nth-child(odd) {
@@ -46,28 +56,6 @@
 
 .team-member:nth-child(even) {
     animation: slideFromRight 1s forwards;
-}
-
-@keyframes slideFromLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-50%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideFromRight {
-    0% {
-        opacity: 0;
-        transform: translateX(50%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
 }
 
 .team-member h2 {
@@ -113,38 +101,17 @@
     }
 }
 
-.team-member:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(107, 4, 95, 0.8);
-    width: calc(27.5% - 40px);
-    height: 450px;
-}
-
-.team-member:hover + .team-member {
-    width: calc(22.5% - 40px);
-    height: 350px;
-    transform: scale(0.95);
-    box-shadow: 0 0 10px rgba(107, 4, 95, 0.5);
-}
-
-.team-member:not(:hover) {
-    width: calc(22.5% - 40px);
-    height: 350px;
-    transform: scale(0.95);
-    box-shadow: 0 0 10px rgba(107, 4, 95, 0.5);
-}
-
 .main-title {
-    text-align: center; /* Center the text */
-    font-size: 2em; /* Make the text large */
-    margin-bottom: 20px; /* Add some space below the text */
-    overflow: hidden; /* Hide overflow to prevent initial visibility of words */
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .main-title span {
-    display: inline-block; /* Make each word an inline-block element */
-    opacity: 0; /* Initially hide each word */
-    animation: fadeIn 0.5s forwards; /* Animation to fade in each word */
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
 }
 
 @keyframes fadeIn {
@@ -158,7 +125,6 @@
     }
 }
 
-/* Delay each word's animation */
 .main-title span:nth-child(1) {
     animation-delay: 0s;
 }
@@ -167,4 +133,60 @@
 }
 .main-title span:nth-child(3) {
     animation-delay: 1s;
+}
+
+/* Styles for desktop only */
+@media screen and (min-width: 1200px) {
+    .team-member {
+        margin: 5px; /* Updated margin for desktop */
+    }
+
+    .team-member:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(107, 4, 95, 0.8);
+        width: calc(26% - 40px); /* Adjusted width on hover */
+        height: 450px;
+    }
+
+    .team-member:hover + .team-member {
+        width: calc(23% - 40px); /* Adjusted width on hover for adjacent boxes */
+        height: 350px;
+        transform: scale(0.95);
+        box-shadow: 0 0 10px rgba(107, 4, 95, 0.5);
+    }
+
+    .team-member:not(:hover) {
+        width: calc(23% - 40px); /* Adjusted width for non-hovered boxes */
+        height: 350px;
+        transform: scale(0.95);
+        box-shadow: 0 0 10px rgba(107, 4, 95, 0.5);
+    }
+}
+
+/* Styles for mobile and other devices */
+@media screen and (max-width: 1199px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .team-member {
+        width: calc(33.33% - 40px);
+    }
+
+    /* Remove hover effect for mobile and other devices */
+    .team-member:hover {
+        transform: none;
+        box-shadow: none;
+        width: calc(33.33% - 40px);
+        height: 350px;
+    }
+
+    .team-member:hover + .team-member {
+        width: calc(33.33% - 40px);
+    }
+
+    .team-member:not(:hover) {
+        width: calc(33.33% - 40px);
+    }
 }
