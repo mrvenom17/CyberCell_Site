@@ -39,7 +39,7 @@ body {
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(107, 4, 95, 0.5);
     padding: 20px;
-    width: auto;
+    width: calc(25% - 40px);
     cursor: pointer;
     transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
     text-align: center;
@@ -48,6 +48,8 @@ body {
     text-overflow: unset;
     white-space: normal;
     height: auto;
+    max-height: none;
+    overflow: hidden;
 }
 
 .team-member:nth-child(odd) {
@@ -171,22 +173,24 @@ body {
     }
 
     .team-member {
-        width: calc(33.33% - 40px);
+        width: calc(50% - 40px); /* Adjusted width for two columns on mobile */
+        height: 400px; /* Increased height for better visibility */
     }
 
     /* Remove hover effect for mobile and other devices */
     .team-member:hover {
         transform: none;
         box-shadow: none;
-        width: calc(33.33% - 40px);
-        height: 350px;
+        width: calc(50% - 40px);
+        height: 400px;
     }
 
     .team-member:hover + .team-member {
-        width: calc(33.33% - 40px);
+        width: calc(50% - 40px);
     }
 
     .team-member:not(:hover) {
-        width: calc(33.33% - 40px);
+        width: calc(50% - 40px);
     }
 }
+
