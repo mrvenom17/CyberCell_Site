@@ -1,4 +1,4 @@
-/* General styles for all devices */
+/* General styles for all devices
 body {
     font-family: 'Roboto', sans-serif;
     background-image: url('./BG/BG.jpeg');
@@ -8,7 +8,7 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-}
+} */
 
 .social-buttons a {
     display: inline-block;
@@ -35,22 +35,25 @@ body {
 }
 
 .team-member {
-    background-image: url('./LINES/BG2.png');
+    background-image: url('/public/images/BG2.png');
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(107, 4, 95, 0.5);
     padding: 20px;
-    width: calc(25% - 40px);
+    /* width: calc(25% - 20px); */
     cursor: pointer;
-    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    transition:  ease, width 0.3s ease, height 0.3s ease;
     text-align: center;
     margin: 0px;
     /* Remove these three lines to display the full bio on mobile devices */
     text-overflow: unset;
     white-space: normal;
-    height: auto;
-    max-height: none;
+    height: fit-content;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
+
 
 .team-member:nth-child(odd) {
     animation: slideFromLeft 1s forwards;
@@ -78,7 +81,7 @@ body {
     margin-right: auto;
 }
 
-.hello-section {
+/* .hello-section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -90,7 +93,7 @@ body {
     opacity: 0;
     transform: translateY(-50px);
     animation: slideFromTop 1.5s forwards;
-}
+} */
 
 @keyframes slideFromTop {
     0% {
@@ -110,58 +113,32 @@ body {
     overflow: hidden;
 }
 
-.main-title span {
-    display: inline-block;
-    opacity: 0;
-    animation: fadeIn 0.5s forwards;
-}
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-.main-title span:nth-child(1) {
-    animation-delay: 0s;
-}
-.main-title span:nth-child(2) {
-    animation-delay: 0.5s;
-}
-.main-title span:nth-child(3) {
-    animation-delay: 1s;
-}
 
 /* Styles for desktop only */
 @media screen and (min-width: 1200px) {
     .team-member {
         margin: 5px; /* Updated margin for desktop */
+        
     }
 
     .team-member:hover {
         transform: scale(1.05);
         box-shadow: 0 0 20px rgba(107, 4, 95, 0.8);
-        width: calc(26% - 40px); /* Adjusted width on hover */
+        width: calc(26% - 40px); /*Adjusted width on hover*/
         height: 450px;
     }
 
-    .team-member:hover + .team-member {
-        width: calc(23% - 40px); /* Adjusted width on hover for adjacent boxes */
-        height: 350px;
-        transform: scale(0.95);
-        box-shadow: 0 0 10px rgba(107, 4, 95, 0.5);
-    }
+
 
     .team-member:not(:hover) {
-        width: calc(23% - 40px); /* Adjusted width for non-hovered boxes */
+        width: calc(23% - 40px); /*Adjusted width for non-hovered boxes*/
         height: 350px;
-        transform: scale(0.95);
-        box-shadow: 0 0 10px rgba(107, 4, 95, 0.5);
+        /* transform: scale(0.95); */
+    }
+    .club-head .team-member{
+        width: 40%;
     }
 }
 
@@ -169,28 +146,34 @@ body {
 @media screen and (max-width: 1199px) {
     .container {
         max-width: 100%;
-        padding: 0 20px;
+        padding: 10px 10px;
     }
 
     .team-member {
-        width: calc(50% - 40px); /* Adjusted width for two columns on mobile */
+        width: 90%; /* Adjusted width for two columns on mobile */
         height: 400px; /* Increased height for better visibility */
+        /* border: 2px solid rgba(137, 137, 137, 0.497); */
+        box-shadow: 0 0 20px rgba(107, 4, 95, 0.8);
+        margin-bottom: 10px;
+
+
     }
 
     /* Remove hover effect for mobile and other devices */
     .team-member:hover {
-        transform: none;
-        box-shadow: none;
-        width: calc(50% - 40px);
-        height: 400px;
+        /* transform: none; */
+        /* box-shadow: none; */
+        width: 100%;
     }
 
-    .team-member:hover + .team-member {
-        width: calc(50% - 40px);
-    }
 
     .team-member:not(:hover) {
-        width: calc(50% - 40px);
+        width: 90%;
     }
+
+    .club-head .team-member .team-member-photo{
+        flex-shrink: 0;
+    }
+
 }
 

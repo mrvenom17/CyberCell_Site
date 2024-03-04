@@ -227,4 +227,50 @@ function landing_animation(){
 }
 landing_animation()
 
+function team_animation(){
+  let tl=gsap.timeline()
+  gsap.from(".main-title span",{
+    opacity:0,
+    y:200,
+    duration:0.5,
+    scrollTrigger:{
+      trigger:".page2",
+      scroller:".main",
+      markers:true,
+      toggleActions:"restart none restart none",
+      start: 'top 40%',
+      end: '10% 50%',
+    }
+  })
+  gsap.from(".page2 .club-head",{
+    x:"100%",
+    duration:0.5,
+    stagger:0.2,
+    ease:"linear",
+    scrollTrigger:{
+      trigger:".page2",
+      scroller:".main",
+      markers:true,
+      toggleActions:"restart none restart none",
+      start: 'top 40%',
+      end: '10% 50%',
+    }
+  })
+  gsap.from(".page2 .container",{
+    x:"100%",
+    duration:0.5,
+    stagger:0.2,
+    ease:"linear",
+    scrollTrigger:{
+      trigger:".page2",
+      scroller:".main",
+      markers:true,
+      toggleActions:"restart none restart none",
+      start: 'top 40%',
+      end: '10% 50%',
+    }
+  })
+}
+team_animation()
+
 
