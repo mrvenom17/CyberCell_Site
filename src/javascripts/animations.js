@@ -169,13 +169,13 @@ function navbar_animation() {
   menu.addEventListener("click", function (e) {
     if (show === false) {
       gsap.to(".overflow-nav", {
-        x: '0%', // Corrected syntax for setting the transform property
+        x: '50%', // Corrected syntax for setting the transform property
         duration: 1,
         display: "block",
       });
     } else {
       gsap.to(".overflow-nav", {
-        x: '100%',
+        x: '140%',
         duration: 1,
         display: "none",
       });
@@ -236,7 +236,6 @@ function team_animation(){
     scrollTrigger:{
       trigger:".page2",
       scroller:".main",
-      markers:true,
       toggleActions:"restart none restart none",
       start: 'top 40%',
       end: '10% 50%',
@@ -250,7 +249,6 @@ function team_animation(){
     scrollTrigger:{
       trigger:".page2",
       scroller:".main",
-      markers:true,
       toggleActions:"restart none restart none",
       start: 'top 40%',
       end: '10% 50%',
@@ -264,7 +262,6 @@ function team_animation(){
     scrollTrigger:{
       trigger:".page2",
       scroller:".main",
-      markers:true,
       toggleActions:"restart none restart none",
       start: 'top 40%',
       end: '10% 50%',
