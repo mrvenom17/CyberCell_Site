@@ -46,7 +46,6 @@ body {
     /* Remove these three lines to display the full bio on mobile devices */
     text-overflow: unset;
     white-space: normal;
-    height: fit-content;
     overflow: hidden;
     display: flex;
     flex-direction: column;
