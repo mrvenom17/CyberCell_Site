@@ -39,7 +39,7 @@ function events(){
             past_event+=`
             <div class="swiper-slide event past-event h-[550px] w-fit flex flex-col items-center justify-evenly p-8">
                     <div class="image h-[250px] w-[400px] bg-white border-4 border-zinc-800 overflow-hidden max-[700px]:w-[300px]">
-                        <img src=${event.image} alt="" id="event-image" class="h-full w-full">
+                        <img src="${event.image}" alt="" id="event-image" class="h-full w-full">
                     </div>
                     <span class="text-xl">${event.date}</span>
                     <span class="text-3xl">${event.name}</span>

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyber Cell | Official</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="./public/images/Copy of Asset 2(1).ico" type="image/x-icon">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
@@ -14,62 +13,58 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
-  />
-    <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
     <link rel="stylesheet" href="./src/styles/output.css">
     <link rel="stylesheet" href="./src/styles/main.css">
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+  <div class=" hidden popup-container fixed top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-50 h-[70%] w-[60%] bg-white  justify-center items-center rounded duration-500 max-[700px]:w-[90%] max-[700px]:h-[60%] max-[700px]:top-[40%] border-4 border-zinc-400">
+    <div class="popup  relative h-full w-full flex justify-center items-center">
+      <div class="popup-left h-full w-1/2 bg-center max-[700px]:w-[100%]"></div>
+      <div class="popup-right h-full w-1/2 max-[700px]:w-0">
+        
+      </div>
+      <div class="popup-dets flex absolute top-2 items-center bg-sky-400  px-4 py-3 rounded-md">
+        <img src="/public/images/Copy of Asset 2(1).png" alt="" class="h-10 w-10">
+        <h3 class="text-2xl font-bold">CyberCell Presents</h3>
+      </div>
+      <img src="/public/images/cyberknight2-removebg-preview.png" alt="" class="h-40 w-[80%] absolute">
+      <h2 class="text-4xl font-bold absolute text-white bottom-6 left-4"></h2>
+      
+      <a href="/cyberknight.html" class="px-8 py-4 bg-gradient-to-r from-sky-600  to-white  text-black rounded-full absolute bottom-6 right-6 max-[700px]:right-[20%] border-4 border-black">Know More</a>
+      <i class="ri-close-circle-fill text-4xl absolute top-2 right-2 popup-close cursor-pointer z-50 text-[#FBFBFB]"></i>
+      <span class="h-3 w-full absolute bg-purple-500 bottom-0 left-0"></span>
+      </div>
+  </div>
     <div class="cursor h-24 w-24 absolute rounded-full bg-purple-400 flex justify-evenly items-center text-white font-bold text-lg opacity-0 z-10 scale-0 pointer-events-none">
         <span><</span>
         <span>></span>
     </div>
-    <div class=" hidden popup-container absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-50 h-[70%] w-[60%] bg-white  justify-center items-center rounded duration-500 max-[700px]:w-[90%] max-[700px]:h-[60%] max-[700px]:top-[40%] border-4 border-zinc-400">
-      <div class="popup  relative h-full w-full flex justify-center items-center">
-        <div class="popup-left h-full w-1/2 bg-center max-[700px]:w-[100%]"></div>
-        <div class="popup-right h-full w-1/2 max-[700px]:w-0">
-          
-        </div>
-        <div class="popup-dets flex absolute top-2 items-center bg-sky-400  px-4 py-3 rounded-md">
-          <img src="/public/images/Copy of Asset 2(1).png" alt="" class="h-10 w-10">
-          <h3 class="text-2xl font-bold">CyberCell Presents</h3>
-        </div>
-        <img src="/public/images/cyberknight2-removebg-preview.png" alt="" class="h-40 w-[80%] absolute">
-        <h2 class="text-4xl font-bold absolute text-white bottom-6 left-4"></h2>
-        
-        <a href="/cyberknight.html" class="px-8 py-4 bg-gradient-to-r from-sky-600  to-white  text-black rounded-full absolute bottom-6 right-6 max-[700px]:right-[20%] border-4 border-black">Know More</a>
-        <i class="ri-close-circle-fill text-4xl absolute top-2 right-2 popup-close cursor-pointer z-50 text-[#FBFBFB]"></i>
-        <span class="h-3 w-full absolute bg-purple-500 bottom-0 left-0"></span>
-        </div>
-    </div>
+    
     
     <div class="main bg-black text-white overflow-hidden">
       <div class="overflow-nav">
         <div class="link-container h-[60%] flex flex-col justify-evenly">
-        <h2>Home</h2>
-        <h2>Our Team</h2>
-        <h2>Events</h2>
-        <h2>Contact us</h2>
+        <a href="#">Home</a>
+        <a href="#team">Our Team</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact us</a>
         </div>
         
     </div>
+   
         
     <div class="page1 h-screen w-full max-[700px]:h-fit relative">
       
       
         <nav class="h-[12vh] flex justify-between px-2 py-12 items-center max-[700px]:justify-around max-[700px]:bg-[rgba(255, 255, 255, 0.315)]">
-          <div class="nav-left flex relative gap-2  max-[700px]:w-full max-[700px]:justify-between">
+          <div class="nav-left flex items-center relative gap-2  max-[700px]:w-[70%] max-[700px]:justify-evenly">
                           <a href="https://galgotiasuniversity.edu.in">
                             <img src="/public/images/GUlogo.png" alt="" class="h-12 pl-20 gulogo max-[700px]:pl-2 max-[700px]:h-8">
                           </a>
-            <div class="veertical-bar h-[50px] w-[1px] bg-white relative max-[700px]:hidden"></div>
+            <div class="veertical-bar h-[50px] w-[1px] bg-white relative"></div>
                           <a href="https://www.galgotiasuniversity.edu.in/p/student-council">
                             <img src="/public/images/gusc logo Golden.png" alt="" class="h-12 max-[700px]:h-6">
                           </a>
@@ -83,7 +78,7 @@
                 <h4 class="px-6 py-2 text-lg border-2 border-white rounded-full relative overflow-hidden hover:border-black hover:text-black"><a href="#contact" class="">Contact us</a></h4> 
                 <h4 class="px-6 py-2 text-lg border-2 border-white rounded-full relative overflow-hidden hover:border-black hover:text-black"><a href="https://www.galgotiasuniversity.edu.in/p/student-council" class="">GUSC</a></h4> 
                 </div>
-                <div class="nright2 hidden  px-4 py-2 text-2xl border-2 rounded-lg">
+                <div class="nright2 hidden  px-4 py-2 text-2xl border-2 rounded-lg max-[900px]:block fixed max-[900px]:px-2">
                     <i class="ri-menu-line "></i>
                 </div>
                 
@@ -249,7 +244,7 @@
                 
                 
             </div>
-            <footer class="w-full py-6  text-white bg-cover bg-no-repeat border-t-2 border-white">
+            <footer class="w-full py-6  text-white bg-cover bg-no-repeat border-t-2 border-white" id="contact">
               <div class="container flex flex-col items-center justify-center gap-2 text-center md:flex-row md:gap-4">
                 
                 <nav class="flex flex-col gap-2 md:flex-row md:ml-auto md:gap-4 lg:gap-4">
@@ -323,7 +318,6 @@
     </div>
     
 </body>
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script
 src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"

@@ -1,60 +1,4 @@
-var scroll = new LocomotiveScroll({
-  el: document.querySelector('.main'),
-  smooth: true,
-  smartphone: {
-     smooth: true,
-     smoothing: 0.90,
-     smoothMobile:true,
- },
- tablet: {
-     smooth: true
- }})
-function locomotiveanimation(){
-  gsap.registerPlugin(ScrollTrigger);
 
-const locoScroll = new LocomotiveScroll({
-el: document.querySelector(".main"),
-smooth: true,
-
-// for tablet smooth
-tablet: { smooth: true },
-
-// for mobile
-smartphone: { smooth: true }
-});
-locoScroll.on("scroll", ScrollTrigger.update);
-
-ScrollTrigger.scrollerProxy(".main", {
-scrollTop(value) {
-  return arguments.length
-    ? locoScroll.scrollTo(value, 0, 0)
-    : locoScroll.scroll.instance.scroll.y;
-},
-getBoundingClientRect() {
-  return {
-    top: 0,
-    left: 0,
-    width: window.innerWidth,
-    height: window.innerHeight
-  };
-}
-
-// follwoing line is not required to work pinning on touch screen
-
-/* pinType: document.querySelector(".main").style.transform
-  ? "transform"
-  : "fixed"*/
-});
-
-
-
-ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-
-ScrollTrigger.refresh();
-
-}
-
-locomotiveanimation()
 
 function cursoranimatioon(){
   let cursor = document.querySelector(".cursor");
@@ -127,7 +71,7 @@ function eventanimation() {
       scrollTrigger: {
         trigger: '.page4',
         // toggleActions:"restart none restart none",
-        scroller: '.main',
+        scroller: 'body',
         start: 'top 40%',
         end: 'top -50%',
       },
@@ -141,7 +85,7 @@ function eventanimation() {
     scrollTrigger: {
       trigger: '.page3',
       // toggleActions:"restart none restart none",
-      scroller:'.main',
+      scroller:'body',
       start: 'top 40%',
       end: 'top -50%',
     },
@@ -154,7 +98,7 @@ gsap.to(".horizontal h1",{
   transform:"translateX(-80%)",
   scrollTrigger:{
     trigger:".horizontal",
-    scroller:".main",
+    scroller:"body",
     scrub:2,
     start:"top 0",
     end:"top -100%",
@@ -162,29 +106,41 @@ gsap.to(".horizontal h1",{
   }
 })
 
-// function navbar_animation() {
-//   let show = false;
-//   let menu = document.querySelector(".nright2");
+function navbar_animation() {
+  let menu = document.querySelector(".nright2");
+  let show = false;
+  let a=document.querySelectorAll(".overflow-nav .link-container a")
+  a.forEach((element) => {
+    element.addEventListener("click", () => {
+      gsap.to(".overflow-nav", {
+        x: '140%',
+        duration: 1,
+        display: "none",
+      });
+      show=!show;
+    })
+  })
 
-//   menu.addEventListener("click", function (e) {
-//     if (show === false) {
-//       gsap.to(".overflow-nav", {
-//         x: '50%', // Corrected syntax for setting the transform property
-//         duration: 1,
-//         display: "block",
-//       });
-//     } else {
-//       gsap.to(".overflow-nav", {
-//         x: '140%',
-//         duration: 1,
-//         display: "none",
-//       });
-//     }
-//     show = !show;
-//   });
-// }
+  menu.addEventListener("click", function (e) {
+    
+    if (show === false) {
+      gsap.to(".overflow-nav", {
+        x: '30%', // Corrected syntax for setting the transform property
+        duration: 1,
+        display: "block",
+      });
+    } else {
+      gsap.to(".overflow-nav", {
+        x: '140%',
+        duration: 1,
+        display: "none",
+      });
+    }
+    show = !show;
+  });
+}
 
-// navbar_animation();
+navbar_animation();
 
 function landing_animation(){
   let tl = gsap.timeline();
@@ -235,8 +191,7 @@ function team_animation(){
     duration:0.5,
     scrollTrigger:{
       trigger:".page2",
-      scroller:".main",
-      toggleActions:"restart none restart none",
+      scroller:"body",
       start: 'top 40%',
       end: '10% 50%',
     }
@@ -248,8 +203,7 @@ function team_animation(){
     ease:"linear",
     scrollTrigger:{
       trigger:".page2",
-      scroller:".main",
-      toggleActions:"restart none restart none",
+      scroller:"body",
       start: 'top 40%',
       end: '10% 50%',
     }
@@ -261,8 +215,7 @@ function team_animation(){
     ease:"linear",
     scrollTrigger:{
       trigger:".page2",
-      scroller:".main",
-      toggleActions:"restart none restart none",
+      scroller:"body",
       start: 'top 40%',
       end: '10% 50%',
     }
