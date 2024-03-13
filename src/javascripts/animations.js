@@ -126,10 +126,10 @@ function eventanimation() {
       duration:1,
       scrollTrigger: {
         trigger: '.page4',
-        toggleActions:"restart none restart none",
+        // toggleActions:"restart none restart none",
         scroller: '.main',
         start: 'top 40%',
-        end: '10% 10%',
+        end: 'top -50%',
       },
   });
 
@@ -140,10 +140,10 @@ function eventanimation() {
     stagger: 0.3,
     scrollTrigger: {
       trigger: '.page3',
-      toggleActions:"restart none restart none",
+      // toggleActions:"restart none restart none",
       scroller:'.main',
       start: 'top 40%',
-      end: '10% 50%',
+      end: 'top -50%',
     },
   });
 }
@@ -162,29 +162,29 @@ gsap.to(".horizontal h1",{
   }
 })
 
-function navbar_animation() {
-  let show = false;
-  let menu = document.querySelector(".nright2");
+// function navbar_animation() {
+//   let show = false;
+//   let menu = document.querySelector(".nright2");
 
-  menu.addEventListener("click", function (e) {
-    if (show === false) {
-      gsap.to(".overflow-nav", {
-        x: '50%', // Corrected syntax for setting the transform property
-        duration: 1,
-        display: "block",
-      });
-    } else {
-      gsap.to(".overflow-nav", {
-        x: '140%',
-        duration: 1,
-        display: "none",
-      });
-    }
-    show = !show;
-  });
-}
+//   menu.addEventListener("click", function (e) {
+//     if (show === false) {
+//       gsap.to(".overflow-nav", {
+//         x: '50%', // Corrected syntax for setting the transform property
+//         duration: 1,
+//         display: "block",
+//       });
+//     } else {
+//       gsap.to(".overflow-nav", {
+//         x: '140%',
+//         duration: 1,
+//         display: "none",
+//       });
+//     }
+//     show = !show;
+//   });
+// }
 
-navbar_animation();
+// navbar_animation();
 
 function landing_animation(){
   let tl = gsap.timeline();

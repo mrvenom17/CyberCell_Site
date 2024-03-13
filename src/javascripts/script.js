@@ -99,7 +99,7 @@ function expandBox(box) {
   
     gsap.to(loader, {
       width: 0,
-      duration: 5,
+      duration: 7,
       ease: "linear",
       onUpdate: function () {
         // Check if loader width is close to zero
