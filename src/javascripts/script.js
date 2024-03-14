@@ -25,7 +25,7 @@ function events(){
                     <span class="text-xl">${event.date}</span>
                     <span class="text-3xl">${event.name}</span>
                     <span class="text-2xl text-center">${event.venue}</span>
-                    <a class="px-6 py-3 bg-white text-black rounded-full text-lg border-2 hover:bg-black hover:text-white hover:border-white duration-500" href="/cyberknight.html">Know more</a>
+                    <a class="px-6 py-3 bg-white text-black rounded-full text-lg border-2 hover:bg-black hover:text-white hover:border-white duration-500" href="#">Know more</a>
                     
                 </div>
             `
