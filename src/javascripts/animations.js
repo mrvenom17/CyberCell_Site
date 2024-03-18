@@ -99,6 +99,8 @@ gsap.to(".horizontal h1", {
   },
 });
 
+
+
 function navbar_animation() {
   let menu = document.querySelector(".nright2");
   let show = false;

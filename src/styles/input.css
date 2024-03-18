@@ -107,6 +107,12 @@ body {
   font-family: "Montserrat", sans-serif;
   /* Hero Section */
 }
+
+.pageofHead {
+  background-image: url("/public/images/background.png");
+  background-position: center;
+}
+
 .page2 {
   background: url("/public/images/background.png");
   background-size: cover;
