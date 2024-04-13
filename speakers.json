@@ -1,0 +1,77 @@
+{
+    "speakers": [
+      {
+        "name": "Ansh bhavanani",
+        "post":"Application Security Engineer",
+        "image": "public/images/speakers/oe4.png",
+        "instagram": "https://www.instagram.com/johndoe/",
+        "twitter": "https://twitter.com/johndoe",
+        "linkedin": "https://www.linkedin.com/in/johndoe/"
+      },
+      {
+        "name": "Sanchay Singh",
+        "post":"Co-founder of HackersVilla Community",
+        "image": "public/images/speakers/IMG_20240323_154449_347.png",
+        "instagram": "https://www.instagram.com/janesmith/",
+        "twitter": "https://twitter.com/janesmith",
+        "linkedin": "https://www.linkedin.com/in/janesmith/"
+      },
+      {
+        "name": "Tapan Kumar jha",
+        "post":"Founder at ASD Cyber Security and Consultant",
+        "image": "public/images/speakers/WhatsAppImage2024-03-22at13.14.51.jpeg",
+        "instagram": "https://www.instagram.com/alexjohnson/",
+        "twitter": "https://twitter.com/alexjohnson",
+        "linkedin": "https://www.linkedin.com/in/alexjohnson/"
+      },
+      {
+        "name": "Riddhi sarol",
+        "post":"CEO at ASD Cyber Security ",
+        "image": "/public/images/speakers/Untitleddesign(1).png",
+        "instagram": "https://www.instagram.com/emilydavis/",
+        "twitter": "https://twitter.com/emilydavis",
+        "linkedin": "https://www.linkedin.com/in/emilydavis/"
+      },
+      {
+        "name": "Himanshu",
+        "post":"Digital Creator",
+        "image": "public/images/speakers/WhatsAppImage2024-03-24at19.39.53.jpeg",
+        "instagram": "https://www.instagram.com/michaelbrown/",
+        "twitter": "https://twitter.com/michaelbrown",
+        "linkedin": "https://www.linkedin.com/in/michaelbrown/"
+      },
+      {
+        "name": "Prof. Triveni Singh",
+        "post":"Ex IPS | PwC | Futurecrime Researcher",
+        "image": "public/images/speakers/dr-triveni-singh-largeImage-10-a-1010.jpg",
+        "instagram": "https://www.instagram.com/sophiagarcia/",
+        "twitter": "https://twitter.com/sophiagarcia",
+        "linkedin": "https://www.linkedin.com/in/sophiagarcia/"
+      },
+      {
+        "name": "Dr. Anup Girdhar",
+        "post":"CEO, Sedulity Solutions & Technologies",
+        "image": "public/images/speakers/1573735808254.jpeg",
+        "instagram": "https://www.instagram.com/danielmartinez/",
+        "twitter": "https://twitter.com/danielmartinez",
+        "linkedin": "https://www.linkedin.com/in/danielmartinez/"
+      },
+      {
+        "name": "Lucky Thandel",
+        "post":"Security Analyst",
+        "image": "public/images/speakers/WhatsAppImage2024-03-24at13.47.51.jpeg",
+        "instagram": "https://www.instagram.com/emmawilson/",
+        "twitter": "https://twitter.com/emmawilson",
+        "linkedin": "https://www.linkedin.com/in/emmawilson/"
+      },
+      {
+        "name": "Karan",
+        "post":"Certified Ethical Hacker",
+        "image": "public/images/speakers/WhatsAppImage2024-03-24at21.01.42.jpeg",
+        "instagram": "https://www.instagram.com/emmawilson/",
+        "twitter": "https://twitter.com/emmawilson",
+        "linkedin": "https://www.linkedin.com/in/emmawilson/"
+      }
+    ]
+  }
+  
